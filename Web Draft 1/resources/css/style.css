@@ -86,7 +86,7 @@ ul li {
 #static-nav {
     display: grid;
     width: 100%;
-    grid-template-columns: auto;
+    grid-template-columns: 1;
     border-bottom: 2px solid #fff;
     z-index: 100;
     position: fixed;
@@ -245,8 +245,6 @@ ul li {
     width: 15%;
 }
 
-.logo img {}
-
 
 
 /*----- ARTIST / GENRE SELECTION --------- */
@@ -254,7 +252,7 @@ ul li {
 .genre {
     column-count: 3;
     column-gap: 5px;
-    column-width: auto;*/
+    column-width: auto;
 
 }
 
@@ -275,6 +273,11 @@ ul li {
     border-bottom: 0px;
     border-radius: 5%;
 }
+.genre a:link,
+.genre a:visited {
+    text-decoration: none;
+}
+
 
 .genre a:hover,
 .genre a:active {
@@ -285,9 +288,6 @@ ul li {
     border-bottom: 0px;
     border-radius: 5%;
 }
-
-
-
 
 
 .genre-button {
