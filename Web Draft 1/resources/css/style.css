@@ -2,16 +2,18 @@
     background-color: #000;
     color: #fff;
     font-size: 15px;
-    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: Traditional Gothic, sans-serif;
     font-family: 'Lora', serif;
     font-weight: 300;
     color: #fff;
 }
 
+/*
 @font-face {
     font-family: traditionalArabic;
     src: url(resources/fonts/trado.ttf);
 }
+*/
 
 body {
     width: 1140px;
@@ -71,6 +73,7 @@ ul li {
 .nav-menu .label-name {
     font-size: 2.25em;
     letter-spacing: 2px;
+
 }
 
 .nav-menu li:first-child {
@@ -80,6 +83,19 @@ ul li {
 
 
 /*----- STATIC HEADER / MENU --------- */
+#static-nav {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto;
+    border-bottom: 2px solid #fff;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 75px;
+}
+
+/*
 #static-nav {
     width: 100%;
     border-bottom: 2px solid #fff;
@@ -91,6 +107,7 @@ ul li {
     height: 70px;
     align-content: center;
 }
+*/
 
 #static-nav li a {
     text-decoration: none;
@@ -122,16 +139,22 @@ ul li {
 
 }
 
+/*----- MAIN CONTAINER --------- */
+
+.main-container {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto;
+}
 
 /*----- LAST RELEASES --------- */
 
 .last-released {
     text-transform: lowercase;
+    align-content: center;
     text-align: center;
-    width: 15%;
-    position: relative;
-    top: 45px;
-    display: block;
+    position: absolute;
+    top: 65px;
 }
 
 .last-released a {
@@ -225,6 +248,61 @@ ul li {
 .logo img {}
 
 
+
+/*----- ARTIST / GENRE SELECTION --------- */
+
+.genre {
+    column-count: 3;
+    column-gap: 5px;
+    column-width: auto;*/
+
+}
+
+.genre table td {
+    text-decoration: none;
+}
+
+
+.genre a {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    padding: 1px;
+    margin: 1px;
+    border-style: solid;
+    border-color: #000;
+    border-top: 1px;
+    border-bottom: 0px;
+    border-radius: 5%;
+}
+
+.genre a:hover,
+.genre a:active {
+    border-style: solid;
+    border-color: #fff;
+    border-top: 1px;
+    border-right: 10px;
+    border-bottom: 0px;
+    border-radius: 5%;
+}
+
+
+
+
+
+.genre-button {
+    width: 150px;
+    padding-left: 10px;
+}
+
+.genre-button h3 {
+    padding: 4px;
+}
+
+
+
+
+
 /*----- ROSTER --------- */
 .roster {
     color: #fff;
@@ -233,7 +311,9 @@ ul li {
     font-weight: 300;
     position: absolute;
     left: 250px;
-    top: 185px
+    top: 250px;
+    display: inline;
+    float: none;
 }
 
 .roster-artist {
@@ -293,6 +373,7 @@ input {
 
 input[type="submit"] {
     width: 10%;
+    height: 100px;
 }
 
 input[name="message"] {
@@ -303,11 +384,20 @@ input[name="message"] {
 
 /*----- FOOTER --------- */
 
+.footer-div {
+    z-index: 999;
+    position: absolute;
+    float: none;
+}
+
+
 footer {
     width: 15%;
     height: 10%;
     margin-left: 42.5%;
     margin-right: 42.5%;
+    display: inline-flex;
+    z-index: 9999;
 }
 
 footer p {
