@@ -2,7 +2,6 @@
 <p>The public rebranding of Oregon-based record label Glossolalia Records. This label specializes in releasing underground music from artists
 in the black and death metal genres, as well as experimental audio/noise artists.</p>
 <br />
-<br />
 <h4>Tech Stack:</h4>
 <ul>
   <li>Javascript</li>
