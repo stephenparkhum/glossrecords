@@ -4,6 +4,7 @@ import csv
 import json 
 from datetime import timedelta
 import re
+import os 
 
 # Collect and parse first page
 
@@ -13,8 +14,6 @@ soup = BeautifulSoup(page.text, 'html.parser')
 
 # Pull all text from the BodyText div
 columns = soup.find('div', { "class" : "leftMiddleColumns" })
-
-
 
 
 # Create CSV
@@ -32,17 +31,17 @@ for p_two in columns.find_all('p', { "class" : "title" }):
                 if title == "": 
                         title = artist
 
+
         title_url = title.replace(' ', '-').replace('.', '')
         bc_url = gr_bc + "album/" + title_url.lower()
         bc_url_req = requests.get(bc_url)
         bc_url_soup = BeautifulSoup(bc_url_req.text, 'html.parser')
         
-
-
-
         #print(artist, title)
         
         #Create GR Dictionary of Artists/Titles
+        
+        
         grdict = {
                 "artist": artist,
                 "title": title,
@@ -52,11 +51,14 @@ for p_two in columns.find_all('p', { "class" : "title" }):
                 "rel-img": " " 
 
         }
-
         
+        
+
+        print(grdict)
         #Write info to CSV
         f.writerow([artist, title, grdict['rel-date'], bc_url, grdict['genre']])
-
+        
+        
 
 # Release date scarpe 
 
