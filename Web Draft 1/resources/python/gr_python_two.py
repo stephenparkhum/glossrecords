@@ -52,7 +52,6 @@ for p_two in columns.find_all('p', { "class" : "title" }):
 
         }
         
-        
 
         print(grdict)
         #Write info to CSV
