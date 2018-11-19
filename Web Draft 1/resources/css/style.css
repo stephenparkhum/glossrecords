@@ -2,22 +2,23 @@
     background-color: #000;
     color: #fff;
     font-size: 15px;
-    font-family: Traditional Gothic, sans-serif;
+    font-family: traditionalArabic, sans-serif;
     font-family: 'Lora', serif;
     font-weight: 300;
     color: #fff;
 }
 
-/*
+
 @font-face {
     font-family: traditionalArabic;
     src: url(resources/fonts/trado.ttf);
 }
-*/
+
 
 body {
     width: 1140px;
     font-weight: 300;
+    background-color: brown;
 }
 
 ul li {
@@ -147,14 +148,15 @@ ul li {
     grid-template-rows: auto;
 }
 
-/*----- LAST RELEASES --------- */
+/*----- LATEST RELEASES / Sidebar --------- */
 
 .last-released {
+    background-color: pink;
     text-transform: lowercase;
     align-content: center;
     text-align: center;
     position: absolute;
-    top: 65px;
+    float: auto;
 }
 
 .last-released a {
@@ -239,10 +241,9 @@ ul li {
 
 /*----- LOGO --------- */
 .logo {
-    position: relative;
-    top: 65px;
+    position: absolute;
+    top: 100px;
     z-index: 9;
-    width: 15%;
 }
 
 
@@ -250,28 +251,30 @@ ul li {
 /*----- ARTIST / GENRE SELECTION --------- */
 
 .genre {
-    column-count: 3;
-    column-gap: 5px;
-    column-width: auto;
+    background-color: aqua;
+
+}
+
+.genre li {
+    display: inline;
+    padding: 20px;
+    
 
 }
 
 .genre table td {
     text-decoration: none;
+    margin-left: 2px;
+
 }
 
 
 .genre a {
     text-decoration: none;
     text-transform: uppercase;
-    display: flex;
-    padding: 1px;
+    padding: 5px;
     margin: 1px;
-    border-style: solid;
-    border-color: #000;
-    border-top: 1px;
-    border-bottom: 0px;
-    border-radius: 5%;
+
 }
 .genre a:link,
 .genre a:visited {
@@ -281,24 +284,15 @@ ul li {
 
 .genre a:hover,
 .genre a:active {
-    border-style: solid;
-    border-color: #fff;
-    border-top: 1px;
-    border-right: 10px;
-    border-bottom: 0px;
-    border-radius: 5%;
+    border-bottom: 2px solid white;
+    align-content: center;
 }
 
 
 .genre-button {
-    width: 150px;
-    padding-left: 10px;
-}
+    display: flex;
 
-.genre-button h3 {
-    padding: 4px;
 }
-
 
 
 
@@ -306,18 +300,16 @@ ul li {
 /*----- ROSTER --------- */
 .roster {
     color: #fff;
-    float: right;
-    width: 66.6%;
     font-weight: 300;
+    align-content: center;
+    background-color: aqua;
+    align-content: center;
     position: absolute;
-    left: 250px;
-    top: 250px;
-    display: inline;
-    float: none;
+    margin-left: 20%;
+    margin-top: 20%;
 }
 
 .roster-artist {
-    display: inline-block;
     text-align: center;
     padding-right: 20px;
 }
@@ -327,9 +319,6 @@ ul li {
     border: 1px solid #fff;
 }
 
-.roster-artist table {
-    margin-left: 100px;
-}
 
 .roster img {
     width: 170px;
@@ -341,10 +330,9 @@ ul li {
     height: 150px;
 }
 
-.roster ul li {
+.roster li {
     color: #fff;
     text-decoration: none;
-    padding-bottom: 25px;
 }
 
 .roster h2 {
@@ -353,7 +341,20 @@ ul li {
 
 }
 
-.roster p {}
+.roster a {
+    text-decoration: none;
+    color: white;
+}
+
+.roster a:hover {
+    border-bottom: 1px solid white;
+}
+
+.roster a:visited {
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
 
 /*----- FORMS --------- */
 .demo-submit {
