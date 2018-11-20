@@ -15,11 +15,17 @@
     background-color: #000;
     color: #fff;
     font-size: 15px;
-    font-family: traditionalArabic, sans-serif;
-    font-family: 'Lora', serif;
+    font-family: "trado";
     font-weight: 300;
     color: #fff;
 }
+
+@font-face {
+    font-family: "trado";
+    src: url("css/fonts/trado.ttf");
+    }
+    
+    
 
 body {
     font-weight: 300;
@@ -29,7 +35,7 @@ body {
 
 ul li {
     text-decoration: none;
-    list-style: none
+    list-style: none;
 }
 
 .row {
@@ -72,6 +78,7 @@ ul li {
 .nav-menu .label-name {
     font-size: 2.25em;
     letter-spacing: 2px;
+    text-transform: lowercase;
 
 }
 
@@ -83,7 +90,7 @@ ul li {
 
 /*----- STATIC HEADER / MENU --------- */
 #static-nav {
-    border-bottom: 2px solid #fff;
+    border-bottom: 1px solid #fff;
     height: 70px;
     align-content: center;
     position: fixed;
@@ -127,6 +134,7 @@ ul li {
 #static-nav .label-name {
     font-size: 2.25em;
     letter-spacing: 2px;
+    text-transform: lowercase;
 }
 
 #static-nav li:first-child {
@@ -189,14 +197,12 @@ ul li {
 
 /*----- BLOG/NEWS --------- */
 
-.news {
 
-}
-
-.news h1 {
+.main_content h1 {
     font-weight: 400;
     font-size: 2.05em;
     margin-top: 1px;
+    margin-left: 10px;
     text-transform: uppercase;
 }
 
@@ -214,6 +220,7 @@ ul li {
 
 .news p {
     font-size: .85em;
+    
 }
 
 .band {
@@ -243,24 +250,28 @@ ul li {
 .genre li {
     padding: 10px;
     display: inline-block;
+    background-color: rgba(32, 32, 32, 0.253);
+    border-radius: 5%;
+
+}
+
+.genre ul {
+    padding: 0px;
     
-
 }
 
-.genre table {
-    text-decoration: none;
-
-}
 
 
 .genre a {
     text-decoration: none;
     text-transform: uppercase;
+    
 
 }
 .genre a:link,
 .genre a:visited {
     text-decoration: none;
+    background-color: rgba(70, 70, 70, 0.253);
 }
 
 
@@ -272,7 +283,7 @@ ul li {
 
 
 .genre-button {
-    display: flex;
+    margin: 0;
 
 }
 
@@ -303,9 +314,10 @@ ul li {
     border: 1px solid #fff;
 }
 
-.roster .hb {
-    width: 150px;
-    height: 150px;
+.hb img {
+    object-fit: cover;
+    width: 175px;
+    height: 175px;
 }
 
 .roster li {
