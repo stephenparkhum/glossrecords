@@ -1,3 +1,16 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "header_nav header_nav header_nav header_nav header_nav" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content";
+  }
+  
+  .header_nav { grid-area: header_nav; }
+  
+  .sidebar_nav { grid-area: sidebar_nav; }
+  
+  .main_content { grid-area: main_content; }
+
 * {
     background-color: #000;
     color: #fff;
@@ -8,27 +21,15 @@
     color: #fff;
 }
 
-
-@font-face {
-    font-family: traditionalArabic;
-    src: url(resources/fonts/trado.ttf);
-}
-
-
 body {
-    width: 1140px;
     font-weight: 300;
-    background-color: brown;
+    background-color:black;
+    color: white;
 }
 
 ul li {
     text-decoration: none;
     list-style: none
-}
-
-.container {
-    width: 100%;
-
 }
 
 .row {
@@ -39,16 +40,13 @@ ul li {
 
 /*----- HEADER / MENU --------- */
 
-.nav-menu {
+ .nav-menu {
     width: 100%;
     border-bottom: 2px solid #fff;
     z-index: 100;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 70px;
-    align-content: center;
 }
 
 .nav-menu li a {
@@ -80,23 +78,19 @@ ul li {
 .nav-menu li:first-child {
     padding-left: 12.5%;
 
-}
+} 
 
 
 /*----- STATIC HEADER / MENU --------- */
 #static-nav {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1;
     border-bottom: 2px solid #fff;
-    z-index: 100;
+    height: 70px;
+    align-content: center;
     position: fixed;
-    top: 0;
-    left: 0;
-    height: 75px;
+    background-color: black;
 }
 
-/*
+
 #static-nav {
     width: 100%;
     border-bottom: 2px solid #fff;
@@ -108,7 +102,7 @@ ul li {
     height: 70px;
     align-content: center;
 }
-*/
+
 
 #static-nav li a {
     text-decoration: none;
@@ -142,20 +136,18 @@ ul li {
 
 /*----- MAIN CONTAINER --------- */
 
-.main-container {
+/* .main-container {
     display: grid;
     grid-template-columns: 200px auto;
     grid-template-rows: auto;
-}
+} */
 
 /*----- LATEST RELEASES / Sidebar --------- */
 
 .last-released {
-    background-color: pink;
     text-transform: lowercase;
     align-content: center;
     text-align: center;
-    float: auto;
 }
 
 .last-released a {
@@ -187,7 +179,6 @@ ul li {
     font-size: .75em;
     width: 80%;
     margin-bottom: 35px;
-    margin-top: 5px;
 }
 
 .feature-albums img {
@@ -199,12 +190,6 @@ ul li {
 /*----- BLOG/NEWS --------- */
 
 .news {
-    display: block;
-    width: 100%;
-    float: right;
-    position: absolute;
-    top: 120px;
-    margin-left: 20%;
 
 }
 
@@ -240,9 +225,7 @@ ul li {
 
 /*----- LOGO --------- */
 .logo {
-    width: 200px;
-    position: relative;
-    top: 5%;
+    
 }
 
 
@@ -250,17 +233,14 @@ ul li {
 /*----- ARTIST / GENRE SELECTION --------- */
 
 .genre {
-    background-color: aqua;
-    display: flex;
-    top: 15%;
-    left: 10%;
-    position: absolute;
+    
+
 
 }
 
 .genre li {
-    padding: 0px;
-    display: flex;
+    padding: 10px;
+    display: inline-block;
     
 
 }
@@ -274,8 +254,6 @@ ul li {
 .genre a {
     text-decoration: none;
     text-transform: uppercase;
-    padding: 5px;
-    margin: 1px;
 
 }
 .genre a:link,
@@ -303,8 +281,8 @@ ul li {
 .roster {
     color: #fff;
     font-weight: 300;
-    background-color: aqua;
-    display: inline-block;
+    
+
 }
 
 .roster-artist {
@@ -386,7 +364,6 @@ input[name="message"] {
 .footer-div {
     z-index: 999;
     position: absolute;
-    float: none;
 }
 
 
