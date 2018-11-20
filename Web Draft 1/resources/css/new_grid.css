@@ -5,7 +5,7 @@
     grid-template-areas: "header_nav header_nav header_nav header_nav header_nav" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content";
   }
   
-  .header_nav { grid-area: header_nav; padding: 0;}
+  .header_nav { grid-area: header_nav; padding-left: 10%;}
   
   .sidebar_nav { grid-area: sidebar_nav; }
   
@@ -220,7 +220,7 @@ ul li {
 
 .news p {
     font-size: .85em;
-    
+
 }
 
 .band {
