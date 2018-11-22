@@ -1,8 +1,7 @@
 <h1>Glossolalia Records</h1>
 <p>The public rebranding of Oregon-based record label Glossolalia Records. This label specializes in releasing underground music from artists
 in the black and death metal genres, as well as experimental audio/noise artists.</p>
-<p>Current Bandcamp:</p>
-<a href="https://glossolaliarecords.bandcamp.com/">https://glossolaliarecords.bandcamp.com/</a>
+<p>Current Bandcamp: <a href="https://glossolaliarecords.bandcamp.com/">https://glossolaliarecords.bandcamp.com/</a></p>
 <br />
 <br />
 <img src="gr_sample_112118_02.png" />
