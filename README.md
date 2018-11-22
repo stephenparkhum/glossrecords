@@ -3,7 +3,7 @@
 in the black and death metal genres, as well as experimental audio/noise artists.</p>
 <br />
 <br />
-<img src="gr_sample_112118.png" />
+<img src="gr_sample_112118_02.png" />
 <h4>Tech Stack:</h4>
 <ul>
   <li>Javascript</li>
