@@ -22,7 +22,7 @@
 
 @font-face {
     font-family: "trado";
-    src: url("css/fonts/trado.ttf");
+    src: url("/css/fonts/trado.ttf");
     }
     
     
@@ -202,7 +202,7 @@ ul li {
     font-weight: 400;
     font-size: 2.05em;
     margin-top: 1px;
-    margin-left: 10px;
+    margin-left: 0.5px;
     text-transform: uppercase;
 }
 
@@ -242,13 +242,13 @@ ul li {
 /*----- ARTIST / GENRE SELECTION --------- */
 
 .genre {
-    padding: 0;
+    padding-right: 4px;
 
 
 }
 
 .genre li {
-    padding: 10px;
+    padding: 0px 10px 10px 0px;
     display: inline-block;
     background-color: rgba(32, 32, 32, 0.253);
     border-radius: 5%;
@@ -256,7 +256,7 @@ ul li {
 }
 
 .genre ul {
-    padding: 0px;
+    padding: 0;
     
 }
 
@@ -318,6 +318,11 @@ ul li {
     object-fit: cover;
     width: 175px;
     height: 175px;
+}
+
+.roster-artist h2 a, a {
+    text-transform: none;
+    text-decoration: none;
 }
 
 .roster li {
