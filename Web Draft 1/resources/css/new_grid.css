@@ -5,7 +5,7 @@
     grid-template-areas: "header_nav header_nav header_nav header_nav header_nav" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content";
   }
   
-  .header_nav { grid-area: header_nav; padding-left: 10%;}
+  .header_nav { grid-area: header_nav;}
   
   .sidebar_nav { grid-area: sidebar_nav; }
   
@@ -89,13 +89,12 @@ ul li {
 
 
 /*----- STATIC HEADER / MENU --------- */
-#static-nav {
+/* #static-nav {
     border-bottom: 1px solid #fff;
     height: 70px;
     align-content: center;
-    position: fixed;
     background-color: black;
-}
+} */
 
 
 #static-nav {
@@ -116,6 +115,7 @@ ul li {
     margin: 0 0;
     font-weight: 300;
     font-size: 1.15em;
+
 }
 
 #static-nav a:hover {
@@ -129,6 +129,7 @@ ul li {
 #static-nav li {
     display: inline-block;
     padding: 1px 25px 0 0;
+    
 }
 
 #static-nav .label-name {
@@ -138,7 +139,7 @@ ul li {
 }
 
 #static-nav li:first-child {
-    padding-left: 12.5%;
+    padding-left: 17%;
 
 }
 
