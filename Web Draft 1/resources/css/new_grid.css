@@ -105,7 +105,7 @@ ul li {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
+    height: 65px;
     align-content: center;
 }
 
@@ -132,10 +132,10 @@ ul li {
     
 }
 
-#static-nav .label-name {
+#static-nav .label-name a {
     font-size: 2.25em;
     letter-spacing: 2px;
-    text-transform: lowercase;
+    text-transform: lowercase; 
 }
 
 #static-nav li:first-child {
