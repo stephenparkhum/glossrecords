@@ -1,0 +1,77 @@
+/* OTHER */
+
+.birth,
+.death {
+    font-size: .65em;
+}
+
+h2 {
+    text-transform: none;
+    width: 100px;
+    font-size: 1.15em;
+
+}
+
+
+/* ARTIST BIOGRAPHY */
+
+.band-photo img {
+    width: 150px;
+}
+
+.bio p {
+    font-size: .95em;
+}
+
+
+/* ALBUMS */
+
+.artist-albums img {
+    width: 170px;
+    border: 1px solid white;
+}
+
+.artist-albums .title {
+    font-size: .95em;
+    text-align: center;
+}
+
+.artist-albums .year {
+    font-size: .90em;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.artist-albums .year p {
+    padding: 0;
+}
+
+.artist-albums iframe {
+    padding-left: 50px;
+    align-content: center;
+}
+
+
+/* SOCIAL MEDIA */
+
+.artist-social {
+    padding: 0;
+    margin: 0;
+}
+
+/* .artist-social h2 {
+    text-transform: none;
+    font-size: 1.25em;
+} */
+
+.artist-social ul li {
+    text-decoration: none;
+    display: inline-block;
+
+
+}
+
+.artist-social .twitter {
+    width: 25px;
+
+}

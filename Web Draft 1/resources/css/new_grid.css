@@ -5,7 +5,7 @@
     grid-template-areas: "header_nav header_nav header_nav header_nav header_nav" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content";
   }
   
-  .header_nav { grid-area: header_nav; padding-left: 10%;}
+  .header_nav { grid-area: header_nav;}
   
   .sidebar_nav { grid-area: sidebar_nav; }
   
@@ -22,13 +22,13 @@
 
 @font-face {
     font-family: "trado";
-    src: url("/css/fonts/trado.ttf");
+    src: url("./fonts/trado.ttf");
     }
     
     
 
 body {
-    font-weight: 300;
+    font-weight: 200;
     background-color:black;
     color: white;
 }
@@ -89,13 +89,12 @@ ul li {
 
 
 /*----- STATIC HEADER / MENU --------- */
-#static-nav {
+/* #static-nav {
     border-bottom: 1px solid #fff;
     height: 70px;
     align-content: center;
-    position: fixed;
     background-color: black;
-}
+} */
 
 
 #static-nav {
@@ -106,7 +105,7 @@ ul li {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
+    height: 65px;
     align-content: center;
 }
 
@@ -116,6 +115,7 @@ ul li {
     margin: 0 0;
     font-weight: 300;
     font-size: 1.15em;
+
 }
 
 #static-nav a:hover {
@@ -129,16 +129,17 @@ ul li {
 #static-nav li {
     display: inline-block;
     padding: 1px 25px 0 0;
+    
 }
 
-#static-nav .label-name {
+#static-nav .label-name a {
     font-size: 2.25em;
     letter-spacing: 2px;
-    text-transform: lowercase;
+    text-transform: lowercase; 
 }
 
 #static-nav li:first-child {
-    padding-left: 12.5%;
+    padding-left: 17%;
 
 }
 
@@ -154,8 +155,9 @@ ul li {
 
 .last-released {
     text-transform: lowercase;
-    align-content: center;
-    text-align: center;
+    padding-left: 5%;
+    /* align-content: center; */
+    /* text-align: center; */
 }
 
 .last-released a {
@@ -164,11 +166,13 @@ ul li {
 
 .last-released h1 {
     font-weight: 300;
-    font-size: 1.35em;
+    font-size: 1.55em;
+    text-decoration: none;
 }
 
 .feature-albums h2 {
     font-weight: 300;
+    text-transform: none;
 }
 
 .artist {
@@ -184,13 +188,13 @@ ul li {
 .feature-albums p {
     margin: auto;
     text-transform: none;
-    font-size: .75em;
+    font-size: .85em;
     width: 80%;
     margin-bottom: 35px;
 }
 
 .feature-albums img {
-    width: 100px;
+    width: 110px;
     border: 1px solid #fff;
 }
 
@@ -248,9 +252,9 @@ ul li {
 }
 
 .genre li {
-    padding: 0px 10px 10px 0px;
+    padding: 2px 15px 10px 0px;
     display: inline-block;
-    background-color: rgba(32, 32, 32, 0.253);
+    background-color: rgba(0, 0, 0, 0.253);
     border-radius: 5%;
 
 }
@@ -294,6 +298,7 @@ ul li {
 .roster {
     color: #fff;
     font-weight: 300;
+    text-transform: none;
     
 
 }
@@ -301,10 +306,11 @@ ul li {
 .roster-artist {
     text-align: center;
     padding-right: 20px;
+    text-transform: none;
 }
 
 .roster-artist img {
-    width: 175px;
+    width: 170px;
     border: 1px solid #fff;
 }
 
@@ -314,10 +320,17 @@ ul li {
     border: 1px solid #fff;
 }
 
-.hb img {
+/* HUNCHBACK DIFFERENCE */
+.roster-artist .hb {
     object-fit: cover;
-    width: 175px;
-    height: 175px;
+    width: 170px;
+    height: 170px;
+}
+
+.roster-artist .sk {
+    object-fit: fill;
+    width: 170px;
+    height: 170px;
 }
 
 .roster-artist h2 a, a {
@@ -333,12 +346,15 @@ ul li {
 .roster h2 {
     text-align: center;
     align-content: center;
+    text-transform: none;
+    text-decoration: none;
 
 }
 
 .roster a {
     text-decoration: none;
     color: white;
+    text-transform: none;
 }
 
 .roster a:hover {
@@ -387,12 +403,14 @@ input[name="message"] {
 
 
 footer {
-    width: 15%;
+    /* width: 15%;
     height: 10%;
     margin-left: 42.5%;
     margin-right: 42.5%;
     display: inline-flex;
     z-index: 9999;
+    background-color: white; */
+    background-color: white;
 }
 
 footer p {
