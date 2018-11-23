@@ -22,7 +22,7 @@
 
 @font-face {
     font-family: "trado";
-    src: url("/css/fonts/trado.ttf");
+    src: url("./fonts/trado.ttf");
     }
     
     
@@ -165,7 +165,7 @@ ul li {
 
 .last-released h1 {
     font-weight: 300;
-    font-size: 1.35em;
+    font-size: 1.55em;
 }
 
 .feature-albums h2 {
@@ -249,9 +249,9 @@ ul li {
 }
 
 .genre li {
-    padding: 0px 10px 10px 0px;
+    padding: 2px 15px 10px 0px;
     display: inline-block;
-    background-color: rgba(32, 32, 32, 0.253);
+    background-color: rgba(0, 0, 0, 0.253);
     border-radius: 5%;
 
 }
