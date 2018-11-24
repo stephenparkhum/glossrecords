@@ -143,6 +143,7 @@ ul li {
     font-size: 2.25em;
     letter-spacing: 2px;
     text-transform: lowercase;
+    letter-spacing: 4px;
 }
 
 #static-nav li:first-child {
