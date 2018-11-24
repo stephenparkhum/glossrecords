@@ -2,14 +2,21 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.7fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "header_nav header_nav header_nav header_nav header_nav" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content" "sidebar_nav main_content main_content main_content main_content";
-  }
-  
-  .header_nav { grid-area: header_nav;}
-  
-  .sidebar_nav { grid-area: sidebar_nav; }
-  
-  .main_content { grid-area: main_content; padding: 15px;}
+    grid-template-areas: "header_nav header_nav header_nav header_nav header_nav""sidebar_nav main_content main_content main_content main_content""sidebar_nav main_content main_content main_content main_content""sidebar_nav main_content main_content main_content main_content""sidebar_nav main_content main_content main_content main_content""sidebar_nav main_content main_content main_content main_content""sidebar_nav main_content main_content main_content main_content""sidebar_nav main_content main_content main_content main_content";
+}
+
+.header_nav {
+    grid-area: header_nav;
+}
+
+.sidebar_nav {
+    grid-area: sidebar_nav;
+}
+
+.main_content {
+    grid-area: main_content;
+    padding: 15px;
+}
 
 * {
     background-color: #000;
@@ -23,13 +30,13 @@
 @font-face {
     font-family: "trado";
     src: url("./fonts/trado.ttf");
-    }
-    
-    
+}
+
+
 
 body {
     font-weight: 200;
-    background-color:black;
+    background-color: black;
     color: white;
 }
 
@@ -46,7 +53,7 @@ ul li {
 
 /*----- HEADER / MENU --------- */
 
- .nav-menu {
+.nav-menu {
     width: 100%;
     border-bottom: 2px solid #fff;
     z-index: 100;
@@ -85,7 +92,7 @@ ul li {
 .nav-menu li:first-child {
     padding-left: 12.5%;
 
-} 
+}
 
 
 /*----- STATIC HEADER / MENU --------- */
@@ -129,19 +136,43 @@ ul li {
 #static-nav li {
     display: inline-block;
     padding: 1px 25px 0 0;
-    
+
 }
 
 #static-nav .label-name a {
     font-size: 2.25em;
     letter-spacing: 2px;
-    text-transform: lowercase; 
+    text-transform: lowercase;
 }
 
 #static-nav li:first-child {
     padding-left: 17%;
 
 }
+
+/* MAILING LIST ICON */
+
+.mailing-list {
+    position: fixed;
+    border: 1px solid rgba(255, 255, 255, 0.205);
+    width: 10%;
+    top: 15%;
+    left: 86%;
+    text-align: center;
+    padding: 0;
+}
+
+.mailing-list h1 {
+    font-size: 1.55em;
+}
+
+.mailing-list img {
+    padding-top: 10px;
+    width: 35px;
+
+}
+
+
 
 /*----- MAIN CONTAINER --------- */
 
@@ -156,6 +187,7 @@ ul li {
 .last-released {
     text-transform: lowercase;
     padding-left: 5%;
+    /* border-right: 1px solid rgba(255, 255, 255, 0.233); */
     /* align-content: center; */
     /* text-align: center; */
 }
@@ -230,15 +262,17 @@ ul li {
 .band {
     margin-bottom: 35px;
     padding-bottom: 30px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.62);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.795);
 }
 
 
 /*----- LOGO --------- */
 .logo {
     text-align: center;
-    width: 90%;
-    
+    width: 95%;
+    border-right: 1px solid rgba(255, 255, 255, 0.233);
+    height: 100%;
+
 }
 
 
@@ -261,7 +295,7 @@ ul li {
 
 .genre ul {
     padding: 0;
-    
+
 }
 
 
@@ -269,9 +303,10 @@ ul li {
 .genre a {
     text-decoration: none;
     text-transform: uppercase;
-    
+
 
 }
+
 .genre a:link,
 .genre a:visited {
     text-decoration: none;
@@ -299,7 +334,7 @@ ul li {
     color: #fff;
     font-weight: 300;
     text-transform: none;
-    
+
 
 }
 
@@ -333,7 +368,8 @@ ul li {
     height: 170px;
 }
 
-.roster-artist h2 a, a {
+.roster-artist h2 a,
+a {
     text-transform: none;
     text-decoration: none;
 }
@@ -399,23 +435,25 @@ input[name="message"] {
 .footer-div {
     z-index: 999;
     position: absolute;
+
 }
 
 
 footer {
-    /* width: 15%;
-    height: 10%;
-    margin-left: 42.5%;
-    margin-right: 42.5%;
-    display: inline-flex;
+    width: 100%;
+    height: 12%;
+    /* display: inline-flex; */
     z-index: 9999;
-    background-color: white; */
-    background-color: white;
+    margin-top: 20px;
+
+
 }
 
 footer p {
+    border-top: 1px solid rgba(255, 255, 255, 0.288);
     font-size: .75em;
     padding-top: 10px;
     text-align: center;
+    width: 100%;
 
 }

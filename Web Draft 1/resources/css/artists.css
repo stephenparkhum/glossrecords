@@ -12,6 +12,11 @@ h2 {
 
 }
 
+.artist-name {
+    font-size: 1.25em;
+    text-transform: none;
+}
+
 
 /* ARTIST BIOGRAPHY */
 
@@ -66,7 +71,6 @@ h2 {
 
 .artist-social ul li {
     text-decoration: none;
-    display: inline-block;
 
 
 }
