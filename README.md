@@ -6,9 +6,9 @@ in the black and death metal genres, as well as experimental audio/noise artists
 <img src="gr_11_23_2018.png" />
 <h4>Tech Stack:</h4>
 <ul>
-  <li>Javascript</li>
   <li>HTML5</li>
   <li>CSS3</li>
+  <li>Javascript</li>
   <li>jQuery</li>
   <li>Python</li>
 </ul>
