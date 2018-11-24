@@ -143,6 +143,7 @@ ul li {
     font-size: 2.25em;
     letter-spacing: 2px;
     text-transform: lowercase;
+    letter-spacing: 4px;
 }
 
 #static-nav li:first-child {
@@ -451,7 +452,7 @@ footer {
 
 footer p {
     border-top: 1px solid rgba(255, 255, 255, 0.288);
-    font-size: .75em;
+    font-size: .76em;
     padding-top: 10px;
     text-align: center;
     width: 100%;
