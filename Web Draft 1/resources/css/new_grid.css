@@ -18,6 +18,10 @@
     padding: 15px;
 }
 
+/* .main_content .blur {
+    background: black;
+} */
+
 * {
     background-color: #000;
     color: #fff;
@@ -155,9 +159,9 @@ ul li {
 
 .mailing-list {
     position: fixed;
-    border: 1px solid rgba(255, 255, 255, 0.205);
+    /* border: 1px solid rgba(255, 255, 255, 0.205); */
     width: 10%;
-    top: 15%;
+    top: 13%;
     left: 86%;
     text-align: center;
     padding: 0;
@@ -403,6 +407,28 @@ a {
     border-bottom: 1px solid white;
 }
 
+
+/*----- ROSTER POP-OUT --------- */
+
+.artist-popout {
+    width: 600px;
+    height: 600px;
+    margin: 100px auto;
+    background-color: rgb(24, 24, 24);
+    position: absolute;
+    left: 340px;
+    top: 120px;
+    border: 1px solid white;
+    display: none;
+}
+
+.artist-popout h2 {
+    font-size: 1.65em;
+    letter-spacing: 8px;
+    text-align: center;
+    background: none;
+    
+}
 
 /*----- FORMS --------- */
 .demo-submit {
