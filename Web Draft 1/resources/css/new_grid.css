@@ -352,6 +352,7 @@ ul li {
 .roster-artist img {
     width: 170px;
     border: 1px solid #fff;
+    cursor: pointer;
 }
 
 
