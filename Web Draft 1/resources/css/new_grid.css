@@ -1,3 +1,7 @@
+
+
+
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -23,7 +27,7 @@
 } */
 
 * {
-    background-color: #000;
+    background: #000;
     color: #fff;
     font-size: 15px;
     font-family: "trado";
@@ -191,7 +195,7 @@ ul li {
 
 .last-released {
     text-transform: lowercase;
-    padding-left: 5%;
+    padding-left: 10%;
     /* border-right: 1px solid rgba(255, 255, 255, 0.233); */
     /* align-content: center; */
     /* text-align: center; */
@@ -203,7 +207,7 @@ ul li {
 
 .last-released h1 {
     font-weight: 300;
-    font-size: 1.55em;
+    font-size: 1.45em;
     text-decoration: none;
 }
 
@@ -274,11 +278,22 @@ ul li {
 /*----- LOGO --------- */
 .logo {
     text-align: center;
-    width: 95%;
+    width: 79%;
     border-right: 1px solid rgba(255, 255, 255, 0.233);
     height: 100%;
+    padding-right: 35px;
 
 }
+
+.gr {
+    align-content: center;
+    margin-left: 25px;
+}
+
+.gr img {
+    width: 175px;
+}
+
 
 
 
@@ -406,39 +421,23 @@ a {
     border-bottom: 1px solid white;
 }
 
-/*----- ARTIST BIO --------- */
 
-.bio {
-    width: 95%;
-    margin: 10px auto;
-    background: none;
-}
-
-.band-photo img {
-    width: 75px;
-    background: none;
-}
-
-#artist-popout .bio h3 {
-    font-size: 0.95em;
-    text-align: center;
-    background: none;
-}
-
-.bio p {
-    font-size: .75em;
-    background: none;
-
-}
 
 /* ALBUMS */
 
 .artist-albums {
     background: none;
+    cursor: pointer;
 }
 
-.artist-albums table {
+.artist-albums table tbody tr td a {
     background: none;
+    margin: 10px auto;
+}
+
+.artist-albums td {
+    background: none;
+    margin-left: 100px;
 }
 
 .artist-albums a img {
@@ -446,13 +445,19 @@ a {
     border: 1px solid white;
     padding-left: 10px;
     background: none;
-    align-content: center;
+
 }
 
 .artist-albums .title {
     font-size: .95em;
     text-align: center;
     background: none;
+}
+
+.artist-albums h3 {
+    background: none;
+    text-align: center;
+    font-size: 1.15em;
 }
 
 .artist-albums .year {
@@ -479,11 +484,12 @@ a {
     width: 600px;
     height: 500px;
     margin: 100px auto;
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(29, 29, 29);
     position: absolute;
     left: 340px;
     top: 120px;
     border: 1px solid white;
+    border-radius: 2%;
 }
 
 #artist-popout h2 {
@@ -492,6 +498,77 @@ a {
     text-align: center;
     background: none;
     border-bottom: 1px solid rgb(112, 112, 112);
+    
+
+}
+
+#artist-popout .close {
+    background-color: #2C2C2C;
+    width: 12px;
+    float: right;
+    left: 285px;
+    top: 8px;
+    position: absolute;
+} 
+
+.close:hover {
+    cursor: pointer;
+}
+
+/* BANEWREAKER */
+#banewreaker {
+    width: 600px;
+    height: 500px;
+    margin: 100px auto;
+    background-color: rgb(36, 36, 36);
+    position: absolute;
+    left: 340px;
+    top: 120px;
+    border: 1px solid white;
+    border-radius: 2%;
+}
+
+#banewreaker h2 {
+    font-size: 1.65em;
+    letter-spacing: 8px;
+    text-align: center;
+    background: none;
+    border-bottom: 1px solid rgb(112, 112, 112);
+    
+
+}
+
+#banewreaker .close {
+    background-color: #2C2C2C;
+    width: 12px;
+    float: right;
+    left: 285px;
+    top: 8px;
+    position: absolute;
+} 
+
+/*----- ARTIST BIO --------- */
+
+.bio {
+    width: 95%;
+    margin: 10px auto;
+    background: none;
+}
+
+.band-photo img {
+    width: 75px;
+    background: none;
+}
+
+#artist-popout .bio h3 {
+    font-size: 1.15em;
+    text-align: center;
+    background: none;
+}
+
+.bio p {
+    font-size: .75em;
+    background: none;
 
 }
 
@@ -528,6 +605,10 @@ input[name="message"] {
     z-index: 999;
     position: absolute;
 
+}
+
+footer ul li {
+    float: left;
 }
 
 

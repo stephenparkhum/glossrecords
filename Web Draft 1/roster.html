@@ -5,7 +5,7 @@
     <title>Glossolalia Records</title>
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="resources/css/new_grid.css" type="text/css">
@@ -43,7 +43,12 @@
                 </div>
             </div>
 
-            <div id="artist-popout" style="display: none;">
+
+            <!-- ARKHUM -->
+            <div id="artist-popout" style="display:none;">
+                <div class="close">
+                    <img src="resources/icons/close_white.png" class="close">
+                </div>
                 <h2 class="band-name">Arkhum</h2>
                 <div class="bio">
                     <h3>Biography</h3>
@@ -72,19 +77,54 @@
                 </div>
             </div>
 
+
+            <!-- BANEWREAKER -->
+            <div id="banewreaker" style="display:none;" class="banewreaker">
+                <div class="close">
+                    <img src="resources/icons/close_white.png" class="close">
+                </div>
+                <h2 class="band-name">Banewreaker</h2>
+                <div class="bio">
+                    <h3>Biography</h3>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
+                <div class="artist-albums">
+                    <h3>Albums</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="https://glossolaliarecords.bandcamp.com/album/banewreaker">
+                                    <img src="https://f4.bcbits.com/img/a1315948548_10.jpg" /></a>
+                                <p class="title">Banewreaker</p>
+                                <p class="year">(2013)</p>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+
             <table>
                 <tr>
                     <td>
                         <!-- <a href="artists/arkhum.html"> -->
-                        <h2 class="roster-artist">
-                            <img src="https://f4.bcbits.com/img/a3426398316_10.jpg" onClick="showDiv()"><br />
+                        <h2 class="roster-artist" class="arkhum">
+                            <img src="https://f4.bcbits.com/img/a3426398316_10.jpg" class="arkhum"><br />
                             <span class="artist-name">Arkhum</span></h2>
                         <!-- </a> -->
 
                     <td>
-                        <a href="artists/banewreaker.html">
-                            <h2 class="roster-artist"><img src="https://f4.bcbits.com/img/a1315948548_10.jpg"><br />Banewreaker</h2>
-                        </a>
+
+                        <h2 class="roster-artist"><img src="https://f4.bcbits.com/img/a1315948548_10.jpg" class="banewreaker">
+                            <br />Banewreaker</h2>
+
                     <td>
                         <h2 class="roster-artist"><img src="https://f4.bcbits.com/img/a3462399564_10.jpg"><br />Dampé's
                             Keep</h2>
@@ -130,7 +170,10 @@
 
         <div class="sidebar_nav">
             <div class="logo">
-                <img src="resources/img/GR_logo_SMALL%20copy.png">
+                <div class="gr">
+                        <img src="label_resources/GR Emblem & Logo, 600 dpi SMALL.png">
+                </div>
+                
                 <div class="last-released">
                     <h1>latest Releases</h1><br />
                     <div class="feature-albums">
@@ -155,11 +198,15 @@
     <div class="row">
         <footer>
             <p>Glossolalia Records | All Rights Reserved &copy; 2018</p>
-
+            <ul>
+                <li>Contact</li>
+                <li></li>
+            </ul>
         </footer>
 
     </div>
     <script src="resources/js/artist-popout.js"></script>
+
 
 </body>
 
