@@ -503,7 +503,7 @@ a {
 }
 
 #artist-popout .close {
-    background-color: #2C2C2C;
+    background: none;
     width: 12px;
     float: right;
     left: 285px;
@@ -539,7 +539,7 @@ a {
 }
 
 #banewreaker .close {
-    background-color: #2C2C2C;
+    background: none;
     width: 12px;
     float: right;
     left: 285px;
