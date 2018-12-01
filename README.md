@@ -15,5 +15,5 @@ in the black and death metal genres, as well as experimental audio/noise artists
 <br /> <br />
 
 
-<h4>Public Release Date: <strong>January 1, 2019</strong></h4><br />
+<h4>Public Release Date: <strong>January 1, 2019</strong></h4>
 <a href="http://glossolaliarecords.com">http://glossolaliarecords.com</a>
