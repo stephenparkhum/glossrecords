@@ -1,3 +1,3 @@
-function artistPop() {
-    document.getElementsBId("artist-popout").onclick.style.display = "visible";
-}
+function showDiv() {
+    document.getElementById('artist-popout').style.display = "visible";
+ }

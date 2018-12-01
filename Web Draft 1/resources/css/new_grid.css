@@ -332,8 +332,6 @@ ul li {
 }
 
 
-
-
 /*----- ROSTER --------- */
 .roster {
     color: #fff;
@@ -408,27 +406,93 @@ a {
     border-bottom: 1px solid white;
 }
 
+/*----- ARTIST BIO --------- */
+
+.bio {
+    width: 95%;
+    margin: 10px auto;
+    background: none;
+}
+
+.band-photo img {
+    width: 75px;
+    background: none;
+}
+
+#artist-popout .bio h3 {
+    font-size: 0.95em;
+    text-align: center;
+    background: none;
+}
+
+.bio p {
+    font-size: .75em;
+    background: none;
+
+}
+
+/* ALBUMS */
+
+.artist-albums {
+    background: none;
+}
+
+.artist-albums table {
+    background: none;
+}
+
+.artist-albums a img {
+    width: 100px;
+    border: 1px solid white;
+    padding-left: 10px;
+    background: none;
+    align-content: center;
+}
+
+.artist-albums .title {
+    font-size: .95em;
+    text-align: center;
+    background: none;
+}
+
+.artist-albums .year {
+    font-size: .85em;
+    text-align: center;
+    margin-top: 5px;
+    background: none;
+}
+
+.artist-albums .year p {
+    padding: 0;
+    background: none;
+}
+
+.artist-albums iframe {
+    padding-left: 50px;
+    align-content: center;
+    background: none;
+}
 
 /*----- ROSTER POP-OUT --------- */
 
-.artist-popout {
+#artist-popout {
     width: 600px;
-    height: 600px;
+    height: 500px;
     margin: 100px auto;
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(27, 27, 27);
     position: absolute;
     left: 340px;
     top: 120px;
     border: 1px solid white;
-    display: none;
 }
 
-.artist-popout h2 {
+#artist-popout h2 {
     font-size: 1.65em;
     letter-spacing: 8px;
     text-align: center;
     background: none;
-    
+    border-bottom: 1px solid rgb(112, 112, 112);
+
 }
 
 /*----- FORMS --------- */

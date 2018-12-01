@@ -20,12 +20,21 @@ h2 {
 
 /* ARTIST BIOGRAPHY */
 
+.bio {
+    width: 200px;
+}
+
 .band-photo img {
     width: 150px;
 }
 
+#artist-popout .bio h3 {
+    font-size: 0.75em;
+}
+
 .bio p {
-    font-size: .95em;
+    font-size: .75em;
+    
 }
 
 
